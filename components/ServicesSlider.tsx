@@ -63,7 +63,7 @@ const ServicesSlider = () => {
     setIsAutoPlaying(false)
   }
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: number) => {
     setCurrentIndex(index)
     setIsAutoPlaying(false)
   }

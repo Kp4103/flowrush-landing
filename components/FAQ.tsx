@@ -55,7 +55,7 @@ const FAQ = () => {
     }
   ]
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index)
   }
 
