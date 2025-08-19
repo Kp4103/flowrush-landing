@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Plus, Minus, HelpCircle } from 'lucide-react'
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(0)
+  const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   const faqs = [
     {
@@ -59,7 +59,7 @@ const FAQ = () => {
     setOpenIndex(openIndex === index ? null : index)
   }
 
-  const categoryColors = {
+  const categoryColors: Record<string, string> = {
     'Services': 'bg-blue-50 text-blue-700 border-blue-200',
     'Industries': 'bg-green-50 text-green-700 border-green-200',
     'Collaboration': 'bg-purple-50 text-purple-700 border-purple-200',
